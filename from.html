@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regfrom</title>
+</head>
+<body>
+    
+        
+        <form action="regfrom.html" method="post">
+             <table align="center" cellpadding="6" cellspacing="0" bgcolor="lightblue" style="width:300px;" >
+            <tr>
+            
+                <td><label for="name" >Name:</label></td>
+                <td><input type="text" name="name" id="name" required placeholder="Enter Name"></td>
+            </tr>
+            <tr>
+                <td><label for="lastname">Last Name:</label></td>
+                <td><input type="text" name="lastname" id="lastname" required placeholder="Enter Last Name"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" name="email" id="email" required placeholder="Enter Email"></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender:</label></td>
+                <td>
+                    <input type="radio" name="gender" value="male" id="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" value="female" id="female" required>
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Eduarion">Education:</label></td>
+                <td>
+                    <select name="education" id="Eduarion">
+                        <option value="" disabled selected>Select</option>
+                        <option value="10th">10th</option>
+                        <option value="12th">12th</option>
+                        <option value="graduation">Graduation</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="cnic">CNIC:</label></td>
+                <td>
+                    <input 
+                      type="text"
+                      name="cnic"
+                      id="cnic"
+                      pattern="^[0-9]{5}-[0-9]{7}-[0-9]{1}$" 
+                      placeholder="xxxxx-xxxxxxx-x"
+                      title="Correct Format With Dashes (xxxxx-xxxxxxx-x)"
+                      required
+                    >
+                </td>
+            </tr>
+            <tr>
+                <td><label for="dob">Date of Birth:</label></td>
+                <td><input type="date" name="dob" id="dob" required></td>
+            </tr>
+            <tr>
+                <td><label for="contact">Contact:</label></td>
+                <td><input type="number" name="contact" id="contact" required placeholder="Enter number"></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td>
+                    <input 
+                      type="password" 
+                      name="password" 
+                      id="password" 
+                      placeholder="Enter Strong Password"
+                      title="One Capital Letter, one Small letter: Abcd123@"
+                      required
+                    >
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit" style="background-color:blue;color:white;padding:10px 20px;border:none;cursor:pointer;">
+                </td>
+            </tr>
+                 
+         </table>        
+        </form>  
+        
+
+        
+</body>
+</html>
